@@ -1,0 +1,5 @@
+@EndUserText.label: 'Libros'
+define service ZSD_LIBROS_CARR {
+  expose Z_I_LIBROS_CARR as Libros;
+  expose z_b_clientes_car as Clientes;
+}

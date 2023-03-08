@@ -1,0 +1,4 @@
+@EndUserText.label: 'Employees - Logali'
+define service ZBS_SD_EMPLOYEE_CARR {
+  expose ZCDS_P_EMPLOYEE_CARR as Employees;
+}

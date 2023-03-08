@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'Employee',
+                     typeNamePlural: 'Employees',
+                     title: { type:#STANDARD,
+                              label: 'Employees',
+                              value: 'EmployeeName'
+                             }
+                     } }
+annotate view ZCDS_P_EMPLOYEE_CARR with
+{
+  @UI.facet: [{ id: 'Employees',
+                purpose: #STANDARD,
+                type: #IDENTIFICATION_REFERENCE,
+                label: 'Employee'}]
+
+  @UI: { lineItem: [ { position: 10, label: 'Employee Number', importance: #HIGH } ],
+         identification: [{ position: 10, label: 'Employee Number' }] }
+  EmployeeNumber;
+  @UI: { lineItem: [ { position: 20, label: 'Employee Name', importance: #HIGH } ],
+         identification: [{ position: 20, label: 'Employee Name' }] }
+  EmployeeName;
+  @UI: { lineItem: [ { position: 30, label: 'Department', importance: #HIGH } ],
+         identification: [{ position: 30, label: 'Department' }] }
+  EmployeeDepartment;
+  @UI: { lineItem: [ { position: 40, label: 'Status', importance: #HIGH } ],
+         identification: [{ position: 40, label: 'Status' }] }
+  EmployeeStatus;
+  @UI: { lineItem: [ { position: 50, label: 'Job Code', importance: #MEDIUM } ],
+         identification: [{ position: 50, label: 'Job Code' }] }
+  JobCode;
+  @UI: { lineItem: [ { position: 60, label: 'Job Title', importance: #MEDIUM } ],
+         identification: [{ position: 60, label: 'Job Title' }] }
+  JobTitle;
+  @UI: { lineItem: [ { position: 70, label: 'Email', importance: #HIGH } ],
+         identification: [{ position: 70, label: 'Email' }] }
+  Email;
+  @UI: { lineItem: [ { position: 80, label: 'Start Date', importance: #LOW } ],
+         identification: [{ position: 80, label: 'Start Date' }] }
+  StartDate;
+  @UI: { lineItem: [ { position: 90, label: 'End Date', importance: #LOW } ],
+         identification: [{ position: 90, label: 'End Date' }] }
+  EndDate;
+
+}
